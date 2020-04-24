@@ -9,7 +9,7 @@ const Navigation = ({ content }) => (
       </a>
       <div className="navbar-item title is-4">{content.title}</div>
     </div>
-    <div className="navbar-end">
+    <div className="navbar-end is-hidden-touch">
       <a className="navbar-item" href={content.paypal_link}>
         <i className="fab fa-paypal" />
       </a>

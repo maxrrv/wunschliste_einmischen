@@ -1,7 +1,7 @@
 import React from "react";
 import "bulma/css/bulma.css";
 
-const WishlistItem = ({ content }) => (
+const WishListItem = ({ content }) => (
   <div class="box">
     <div class="media">
       <figure class="media-left">
@@ -12,7 +12,8 @@ const WishlistItem = ({ content }) => (
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>{content.title}</strong>
+            <strong>{`${content.title} `}</strong> 
+            {content.fulfilled && <i className="far fa-check-circle" style={{color: "lightGreen"}} /> }
             <br />
             {content.subtext}
           </p>
@@ -21,3 +22,5 @@ const WishlistItem = ({ content }) => (
     </div>
   </div>
 );
+
+export default WishListItem
