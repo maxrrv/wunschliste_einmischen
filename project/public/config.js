@@ -11,14 +11,16 @@ window.websiteContent = {
   },
   wishlist: [
     {
-      image: "./vouchers-gift-card.jpg",
+      image: "./images/vouchers-gift-card.jpg",
       title: "Title",
-      subtext: "Subtext"
+      subtext: "Subtext",
+      fulfilled: true
     },
     {
-      image: "./vouchers-gift-card.jpg",
+      image: "./images/vouchers-gift-card.jpg",
       title: "Title",
-      subtext: "Subtext"
+      subtext: "Subtext",
+      fulfilled: false
     }
   ]
 }
