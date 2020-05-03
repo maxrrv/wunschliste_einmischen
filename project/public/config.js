@@ -70,7 +70,7 @@ window.websiteContent = {
       icon: "Book",
       title: "Black Wave: Saudi Arabia, Iran and the Rivalry That Unravelled the Middle East",
       subtitle: "by Kim Ghattas (Hardcover)",
-      description: "description",
+      description: "",
       fulfilled: false
     },
   ]
