@@ -15,7 +15,7 @@ const WishListItem = ({ content })=> {
             <p>
               {content.title && <strong>{`${content.title} `}</strong>}
               {content.subtitle && <small>{`${content.subtitle} `}</small>}
-              {content.fulfilled && <i className="far fa-check-circle" style={{color: "lightGreen"}} /> }
+              {content.fulfilled && <Icons type="check" /> }
               <br />
               {content.description && <span>{content.description}</span>}
             </p>

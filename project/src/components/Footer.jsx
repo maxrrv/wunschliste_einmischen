@@ -1,19 +1,21 @@
 import React from "react";
 import "bulma/css/bulma.css";
+import Icon from './Icons'
 
 const Footer = ({ content }) => (
-<footer className="footer  ">
-  <div className="has-text-centered">
-      <a className="is-hidden-desktop" href={content.paypal_link}>
-        <i className="fab fa-paypal" style={{marginRight: 10}}/>
-      </a>
+  <footer className="footer  ">
+    <div className="has-text-centered">
+      <span style={{marginRight:10}}>
+        <a className="is-hidden-desktop" href={content.paypal_link}>
+          <Icon type="paypal" />
+        </a>
+      </span>
       <a className="is-hidden-desktop" href={content.twitter_link}>
-        <i className="fab fa-twitter" />
+        <Icon type="twitter" />
       </a>
-    <div style={{marginTop: 10}}>Made with 💚</div>
-    <div>Something odd? Create a Pull request <a href="https://github.com/maxrru/wunschliste_einmischen">here</a>.</div>
-  </div>
-</footer>
+      <div style={{marginTop: 10}}>Made with <span role='img' aria-label='heart'>💚</span></div>
+    </div>
+  </footer>
 )
 
 export default Footer

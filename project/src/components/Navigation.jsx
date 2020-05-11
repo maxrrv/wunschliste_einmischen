@@ -1,5 +1,6 @@
 import React from "react";
 import "bulma/css/bulma.css";
+import Icon from './Icons'
 
 const Navigation = ({ content }) => (
   <nav className="navbar">
@@ -11,10 +12,10 @@ const Navigation = ({ content }) => (
     </div>
     <div className="navbar-end is-hidden-touch">
       <a className="navbar-item" href={content.paypal_link}>
-        <i className="fab fa-paypal" />
+        <Icon type="paypal" />
       </a>
       <a className="navbar-item" href={content.twitter_link}>
-        <i className="fab fa-twitter" />
+        <Icon type="twitter" />
       </a>
     </div>
   </nav>

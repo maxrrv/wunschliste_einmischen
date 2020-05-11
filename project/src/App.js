@@ -1,6 +1,4 @@
 import React, { Fragment } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import "bulma/css/bulma.css";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";

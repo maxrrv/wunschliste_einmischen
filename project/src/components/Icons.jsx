@@ -1,33 +1,50 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { 
+  faBook, 
+  faGift, 
+  faMicrochip, 
+  faTabletAlt, 
+  faMicrophoneAlt, 
+  faCalendarAlt,
+  faCheckCircle
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faPaypal,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons'
 import "bulma/css/bulma.css";
 
 const style = {
   fontSize: "30px"
 }
 
+const brandStyle = {
+  fontSize: "20px"
+}
+
 const Icons = ({type}) => {
   switch(type) {
-    case "Book":
-      return <span style={style} ><i className="fas fa-book" /></span>
-      break
-    case "GiftCard":
-      return <span style={style} ><i className="fas fa-gift" /></span>
-      break
-    case "Tablet":
-      return <span style={style} ><i className="fas fa-tablet-alt" /></span>
-      break
-    case "Tech":
-      return <span style={{ ...style, marginLeft: -2 }} ><i className="fas fa-microchip" /></span>
-      break
-    case "MicroPhone":
-      return <span style={{ ...style, marginLeft: 3 }} ><i class="fas fa-microphone-alt" /></span>
-      break
-    case "Event":
-      return <span style={style} ><i class="fas fa-calendar-alt" /></span>
-      break
+    case "book":
+      return <span style={style} ><FontAwesomeIcon icon={faBook} /></span>
+    case "gift":
+      return <span style={style} ><FontAwesomeIcon icon={faGift} /></span>
+    case "tablet":
+      return <span style={style} ><FontAwesomeIcon icon={faTabletAlt} /></span>
+    case "tech":
+      return <span style={{ ...style, marginLeft: -2 }} ><FontAwesomeIcon icon={faMicrochip} /></span>
+    case "microphone":
+      return <span style={{ ...style, marginLeft: 3 }} ><FontAwesomeIcon icon={faMicrophoneAlt} /></span>
+    case "event":
+      return <span style={style} ><FontAwesomeIcon icon={faCalendarAlt} /></span>
+    case "check":
+      return <FontAwesomeIcon icon={faCheckCircle} style={{color: "lightGreen"}} />
+    case "paypal":
+      return <span style={brandStyle} ><FontAwesomeIcon icon={faPaypal} /></span>
+    case "twitter":
+      return <span style={brandStyle} ><FontAwesomeIcon icon={faTwitter} /></span>
     default: 
-      return <span><i className="fas fa-gift" /></span>
-      break
+      return <span style={style}><FontAwesomeIcon icon={faGift} /></span>
   }
 }
 
