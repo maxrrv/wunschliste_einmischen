@@ -7,7 +7,8 @@ import {
   faTabletAlt, 
   faMicrophoneAlt, 
   faCalendarAlt,
-  faCheckCircle
+  faCheckCircle,
+  faGamepad
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faPaypal,
@@ -41,6 +42,8 @@ const Icons = ({type}) => {
       return <FontAwesomeIcon icon={faCheckCircle} style={{color: "lightGreen"}} />
     case "paypal":
       return <span style={brandStyle} ><FontAwesomeIcon icon={faPaypal} /></span>
+    case "toy":
+      return <span style={style} ><FontAwesomeIcon icon={faGamepad} /></span>
     case "twitter":
       return <span style={brandStyle} ><FontAwesomeIcon icon={faTwitter} /></span>
     default: 
