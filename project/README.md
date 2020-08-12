@@ -3,7 +3,7 @@
 ## How to use the wishlist
 This website reads its content from the config.js. So if you want to add a new item, all you have to do is adding another block to the config, like this:
 
-```json
+```js
 {
   icon: "iconName",
   title: "any title",
