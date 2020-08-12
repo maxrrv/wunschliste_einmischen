@@ -1,3 +1,42 @@
+# Wunschliste Einmischen-Podcast
+
+## How to use the wishlist
+This website reads its content from the config.js. So if you want to add a new item, all you have to do is adding another block to the config, like this:
+
+```json
+{
+  icon: "iconName",
+  title: "any title",
+  subtitle: "any subtitle",
+  description: "any description",
+  fulfilled: false,
+},
+```
+`icon`: The icon name that will be displayed at the left hand side of your wish.
+`title`: The title of your wish.
+`subtitle`: The subtitle can be anything your like, i.e. IBAN or Author of a book. It's the tiny text displayed next to the title.
+`description`: The description will be displayed below the title.
+`fulfilled`: If you want to display that a wish has been fulfilled before removing it from the website, you can set fulfilled to `true`. Be aware that you don't need single or double quotes for this one. TL;DR: It's a boolean and not a string.
+
+You can also add some metadata, like the links for your navigation or the text inside the `hero`, the green block on your website.
+### How to change your content directly from github
+
+1. Go to your github.pages repository
+2. Login to your github account if you didn't already.
+3. select `config.js`
+4. you will see the contents of your file, with some info and buttons on top inside a grey box.
+5. Click on the pen symbol on the right hand side of said grey box. You will open the editing menu.
+6. Add / remove content as you like. Please take care of the opening / closing brackets and commas.
+7. click on `Preview changes` inside the grey box on top. Please verify that the changes represent what you wanted to do.
+8. Scroll down. At the bottom of the page, you should see a box labeled `Commit changes`. Add a description what you changed.
+9. Select the radio button for `Commit directly to the master branch`.
+10. Press the green button labeled with `Commit changes`.
+
+You're done and your changes should go online any minute!
+
+## Available icons
+book, event, gift, microphone, tablet, tech, toy
+___________________________________________________
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
